@@ -45,6 +45,9 @@ public class CustomList extends ArrayAdapter<City> {
 
     }
 
+    public boolean hasCity(String cityName) {
+        return false;
+    }
     public int getCount(){
         return cities.size();
     }
