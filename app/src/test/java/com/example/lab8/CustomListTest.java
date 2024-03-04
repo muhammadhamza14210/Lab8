@@ -47,4 +47,16 @@ public class CustomListTest {
         assertFalse(customList.hasCity("Toronto"));
     }
 
+    @Test
+    public void testCountCities() {
+        ArrayList<City> cities = new ArrayList<>();
+        cities.add(new City("Edmonton", "AB"));
+        cities.add(new City("Vancouver", "BC"));
+        cities.add(new City("Toronto", "ON"));
+        CustomList customList = new CustomList(null, cities);
+
+        // Verify that the count is correct
+        assertEquals(3, customList.getCount());
+    }
+
 }
